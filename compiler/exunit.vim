@@ -17,7 +17,11 @@ CompilerSet errorformat=
   \%C\ \ \ \ \ %f:%l,
   \%+G\ \ \ \ \ \ \ (%o)\ %f:%l:\ %m,
   \%+G\ \ \ \ \ \ \ %f:%l:\ %.%#,
-  \**\ (%\\w%\\+)\ %f:%l:\ %m
+  \**\ (%\\w%\\+)\ %f:%l:\ %m,
+  \%Wwarning:\ %m,
+  \%C\ \ %f:%l:\ %o,%Z,
+  \%Wwarning:\ %m,
+  \%C\ \ %f:%l,%Z
 
 let &cpo = s:cpo_save
 unlet s:cpo_save
